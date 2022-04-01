@@ -16,4 +16,3 @@ function showTopic(){
   x.style.foutSize="25xp";
   x.style.color="red";
 }
-document.getElementById('demo').interHTML="Let's change the paragraph";
