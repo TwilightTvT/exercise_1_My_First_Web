@@ -1,27 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html>
 <head>
-  <title>My first styled page</title>
-  <link rel="stylesheet" href="e-3-mystyle.css">
+  <title>一个简单的小学奥术题目</title>
+  <link rel="stylesheet" href="homework1.css">
+  <script src="JavaScript2.js"></script>
 </head>
 <body>
-<!-- Site navigation menu -->
 <ul class="navbar">
-  <li><a href="https://www.notion.so/Getting-Started-b0cfc69997d0459b8697b96f284f51d3">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
+  <li><a href="https://baijiahao.baidu.com/s?id=1623093224920737965&wfr=spider&for=pc&searchword=">更多相似题目</a>
 </ul>
-<!-- Main content -->
-<h1>My first styled page</h1>
-<p>Welcome to my styled page!
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-<p>There should be more here, but I don't know
-what yet.
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
-  by myself.</address>
+
+  <h1>请问你可以求得梯形ABCD的解吗？</h1>
+  <img src="puzzle"></img>
+  <h2>已知：如上图所示，有一个长方形ABED，其中，AB=5厘米，AD=6厘米，阴影部分的面积为6平方厘米</h2>
+  <p id="demo">剩余提示1/1</p>
+  <button onclick="inputAnwser()">点我输入答案</button>
+  <button onclick="hint(),showTopic()">想要点提示？</button>
+  <button onclick="rightAnwser()">获取正确答案</button>
 </body>
 </html>
