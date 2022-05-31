@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+<!-- 我自己的 CSS 文件-->
+    <link rel="stylesheet" href="final.css" type="text/css"/>
+  <!-- 我自己的另一个 CSS 文件-->
+    <link rel="stylesheet" href="style.css">
+<!-- google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <!-- icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body  style="background-color:black;">
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://www.billieeilish.com/"><img src="img/billie.png" height=30px></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#scrollspyHeading1">The story of her</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Albums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">Singles</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Learn more about her</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=QDFiIGTDM6k">The BRIT Awards 2020</a></li>
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=PohpFZZ-bMI">Live Premiere Event</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=_wNsZEqpKUA">Same Interview, The Fifth Year</a></li>
+          </ul>
+        </li>
+      </ul>
+     <!-- 搜索-->
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+  </div>
+  </div>
+</nav>
+
+<!-- 轮播图-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/grammy1.jpeg" class="d-100 w-100" alt="...">
+      <div class="carousel-caption">
+        <h1 class="display-2" id="caption">Billie Eilish<h1>
+          <h3>The owner of seven Grammy awards</h3>
+          <button type="button" class="btn btn-outline-light btn-lg" onclick="window.location.href = 'https://www.grammy.com/artists/billie-eilish/251741'">Learn more</button>
+          <button type="button" class="btn btn-primary btn-lg" id="blackButton" onclick="window.location.href = 'https://www.youtube.com/watch?v=H_hgw-V-wBI'">see a clip</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/R-C.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/cal-1.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h1 class="display-2" id="caption">Billie Eilish<h1>
+          <h3>Generation Z pop singer</h3>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!--  Landing Page-->
+  <div class="container-fluid text-white" id="story">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="display-4" id="scrollspyHeading1">The story of her</h1>
+        <div style="border:1px solid #CCC" id="line1"></div>
+      </div>
+      <div class="col-12">
+        <p class="lead">Billie Eilish is a 21st century global pop-phenomenon. Uncompromising and unapologetic, between her record-breaking, award-winning music and artistry, it's no surprise that she has become one of the biggest and most loved artists of her generation.</p>
+           <img src="img/R-C (1).jpeg" id="p1"></img>
+        <p class="lead">American singer and songwriter Billie Eilish has released two studio albums, one live album, one video album, four extended plays (EPs), 31 singles, and 25 music videos. According to RIAA, she has sold 41.5 million digital singles and 5 million albums. IFPI crowned "Bad Guy" as 2019's biggest selling single globally, selling 19.5 million units in a year span. Eilish is regarded by various media outlets as the "Queen of Gen-Z Pop". At age 17, she became the youngest female artist in UK chart history to score a number-one album. As of October 2021, Eilish has accumulated 76.7 billion career streams worldwide. According to IFPI, Eilish was the 4th best-selling artist of 2019 and 5th best-selling artist of 2020.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<!--专辑-->
+<div class="container-fluid text-white">
+  <div class="row text-center">
+    <h1 class="display-4" id="scrollspyHeading2">Albums</h1>
+    <div style="border:1px solid #CCC" id="line1"></div>
+    <!--<h2 class="display-6 text-left">Studio albums</h2>-->
+    <!-- 专辑1-->
+    <div class="col-xs-12 col-sm-6 col-md-4" id="z1">
+    <img src="img/HTE.jpeg" class="rounded-3" width="33%" id="album">
+      <h3>Happier than ever</h3>
+      <div class="container-paragraph" id=“paragraph1”>
+      <p>Happier Than Ever is the second studio album by American singer Billie Eilish. It was released on July 30, 2021, by Darkroom and Interscope Records. Eilish wrote the album with her frequent collaborator, her brother Finneas O'Connell, who produced the album himself. Eilish cited self-reflection during the COVID-19 pandemic as the biggest inspiration for the album.</p>
+      <p>Released on July 30, 2021</p>
+      <p>Click the button to learn more</p>
+      <button class="action-btn" onclick="window.location.href = 'https://www.youtube.com/watch?v=5GJWxDKyk3A'">
+        <img src="img/other/play.png" height="50px" ></img>
+      </button>
+</div>
+    </div>
+    <!-- 专辑 2-->
+    <div class="col-xs-12 col-sm-6 col-md-4" id="z1">
+      <img src="img/album2.jpeg" class="rounded-3" width="33%" id="album">
+      <h3>When We All Fall Asleep, Where Do We Go?</h3>
+      <div class="container-fluid" id=“paragraph2”>
+      <p id=“paragraph”>Musically, When We All Fall Asleep, Where Do We Go? is a pop, electropop, avant-pop, and art pop record, though it also features influences from hip hop and industrial music. Its songs explore themes such as modern youth, drug addiction, heartbreak, suicide, and mental health, with lyrical sensibilities of humor and horror.</p>
+      </div>
+      <p>Released on March 29, 2019</p>
+      <p>Click the button to learn more</p>
+      <button class="action-btn" onclick="window.location.href = 'https://www.youtube.com/watch?v=pbMwTqkKSps&list=RDEMcce0hP5SVByOVCd8UWUHEA&start_radio=1&rv=HUHC9tYz8ik'">
+        <img src="img/other/play.png" height="50px" ></img>
+      </button>
+      </div>
+    <!-- 专辑 3-->
+    <div class="col-sm-12 col-md-4" id="z1">
+      <img src="img/album3.jpeg" class="rounded-3" width="33%" id="album">
+      <h3>Don't Smile at Me</h3>
+      <div class="container-paragraph" id=“paragraph3”>
+      <p>Don't Smile at Me (stylized as dont smile at me) is the debut extended play by American singer Billie Eilish. Darkroom and Interscope Records released it on August 11, 2017. Eilish and her brother Finneas O'Connell wrote most of the material on the EP and were solely responsible for its production. It is an electropop and bedroom pop record with elements of R&B and jazz.</p>
+      </div>
+      <p>Released on August 11, 2017</p>
+      <p>Click the button to learn more</p>
+      <button class="action-btn" onclick="window.location.href = 'https://www.youtube.com/watch?v=gBRi6aZJGj4&list=RDEMcce0hP5SVByOVCd8UWUHEA&index=7'">
+      <img src="img/other/play.png" height="50px"></img>
+      </button>
+    </div>
+      </div>
+  </div>
+<div style="border:1px solid #CCC" id="line1"></div>
+
+<!-- 单曲-->
+<div class="container-fluid text-white text-center">
+  <h1 class="display-4" id="scrollspyHeading3">Singles</h1>
+  <div style="border:1px solid #CCC" id="line1"></div>
+  </div>
+    <!--音乐播放器-->
+    <div class="music">
+        <h2 class="title">Music Name</h2>
+        <div class="player">
+            <audio src=""></audio>
+            <div class="btns">
+                <div class="prev">
+                    <span class="material-icons">
+                        skip_previous
+                        </span>
+                </div>
+                <div class="playPause" >
+                    <span class="material-icons">
+                        play_arrow
+                        </span>
+                </div>
+                <div class="next">
+                    <span class="material-icons">
+                        skip_next
+                        </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--card-->
+<div class="container-fluid">
+  <div style="border:0.5px solid #CCC" id="line2"></div>
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="card">
+      <img class="card-image-top" src="img/bad guy.jpeg" alt="music-cover"  >
+      <div class="card-body">
+      <h4 class="card-title">Bad guy</h4>
+      <p class="card-text">"Bad Guy" (stylized in all lowercase) is a song recorded by American singer-songwriter Billie Eilish. It was released on March 29, 2019, through Darkroom and Interscope Records, as the fifth single from Eilish's debut studio album, When We All Fall Asleep, Where Do We Go?.</p>
+        <a href="https://www.youtube.com/watch?v=DyDfgMOUjCI" class="btn btn-outline-secondary" >Watch the video!</a>
+    </div>
+  </div>
+</div>
+
+  <div class="col-sm-6 col-md-3">
+  <div class="card">
+    <img class="card-image-top" src="img/Everything_I_Wanted.png" alt="music-cover" >
+    <div class="card-body">
+    <h4 class="card-title">Everything i wanted</h4>
+    <p class="card-text">"Everything I Wanted" received acclaim from critics, several of whom praised the music and lyrics. The song was commercially successful, reaching number eight on the US Billboard Hot 100, becoming Eilish's second top-ten hit in the United States. </p>
+      <a href="https://www.youtube.com/watch?v=EgBJmlPo8Xw" class="btn btn-outline-secondary" >Watch the video!</a>
+    </div>
+    </div>
+  </div>
+
+<div class="col-sm-6 col-md-3">
+  <div class="card">
+    <img class="card-image-top" src="img/ocean_eyes.jpg" alt="music-cover"  >
+    <div class="card-body">
+    <h4 class="card-title">Ocean Eyes</h4>
+    <p class="card-text">"Ocean Eyes" is the second single by American singer Billie Eilish and was part of her debut EP, Don't Smile at Me, and the album Everything."Ocean Eyes" received mainly positive reviews from critics, several of whom praised its composition and the lyrical content. </p>
+      <a href="https://www.youtube.com/watch?v=viimfQi_pUw" class="btn btn-outline-secondary" >Watch the video!</a>
+  </div>
+    </div>
+  </div>
+
+<div class="col-sm-6 col-md-3">
+  <div class="card">
+    <img class="card-image-top" src="img/hostage.jpg" alt="music-cover" >
+    <div class="card-body">
+    <h4 class="card-title">Hostage</h4>
+    <p class="card-text">Upon its release, "Hostage" received positive reviews from music critics, with many liking the lyrics and music. An accompanying music video was released on July 11, 2018, and directed by Henry Scholfield. It takes place in an all-white room, with Eilish and her lover dancing </p>
+      <a href="https://www.youtube.com/watch?v=skHbZBsS7hM" class="btn btn-outline-secondary" >Watch the video!</a>
+  </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  <div style="border:1px solid #CCC" id="line2"></div>
+
+
+  <!--footer-->
+<footer>
+  <div class="container-fluid bg-dark">
+    <div class="row text-center text-white">
+      <div class="col-sm-12 col-md-6">
+        <hr class="light">
+        <h5>Contact Details</h5>
+        <hr class="light">
+        <p>333-333-3333</p>
+        <p>email.billieeilish.com</p>
+        <p>Street Name</p>
+        <p>City, State, 00000</p>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <hr class="light">
+        <h5>Tours available</h5>
+        <hr class="light">
+        <p>Somerset, United Kingdom Jun.24th</p>
+        <p>London, United Kingdom Jun.26th</p>
+        <p>Auckland, New Zealand Sep.8th</p>
+        <p>Auckland, New Zealand Sep.9th</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>&copy; TwillightTvT</h5>
+        <hr class="light">
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
